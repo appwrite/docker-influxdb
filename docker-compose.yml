@@ -1,0 +1,9 @@
+---
+version: '3'
+
+services:
+  influxdb:
+    build: .
+    restart: unless-stopped
+    ports:
+    - "8686:8686"

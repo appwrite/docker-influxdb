@@ -1,0 +1,36 @@
+---
+notifications:
+  email:
+  - team@appwrite.io
+
+language: minimal
+
+arch:
+  - amd64
+  - arm64
+  - ppc64le
+
+os: linux
+
+before_install:
+  - curl -fsSL https://get.docker.com | sh
+  - echo '{"experimental":"enabled"}' | sudo tee /etc/docker/daemon.json
+  - mkdir -p $HOME/.docker
+  - echo '{"experimental":"enabled"}' | sudo tee $HOME/.docker/config.json
+  - sudo service docker start
+
+install:
+  - docker-compose up -d
+
+script:
+  - sleep 10
+  - docker ps -a
+  - docker-compose logs influxdb
+  - >
+    if : >/dev/tcp/localhost/8686; then
+      echo 'Connection available.'
+      travis_terminate 0
+    else
+      echo 'Connection unavailable.'
+      travis_terminate 1
+    fi
