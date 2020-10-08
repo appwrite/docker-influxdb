@@ -1,5 +1,6 @@
 # Docker InfluxDB
 
+[![Build Status](https://travis-ci.com/appwrite/docker-influxdb.svg?branch=main)](https://travis-ci.com/appwrite/docker-influxdb)
 ![Docker Pulls](https://img.shields.io/docker/pulls/appwrite/influxdb.svg)
 [![Discord](https://img.shields.io/discord/564160730845151244)](https://discord.gg/GSeTUeA)
 
@@ -38,7 +39,7 @@ Multi-arch build (experimental using [buildx](https://github.com/docker/buildx))
 
 ```
 docker buildx create --use
-docker buildx build --platform linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/386,linux/ppc64le --tag appwrite/influxdb:0.0.0 . --push
+docker buildx build --platform linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64 --tag appwrite/influxdb:0.0.0 . --push
 ```
 
 ## Find Us
