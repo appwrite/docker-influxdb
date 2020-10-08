@@ -27,7 +27,7 @@ script:
   - docker ps -a
   - docker-compose logs influxdb
   - >
-    if : >/dev/tcp/localhost/8686; then
+    if : >/dev/tcp/localhost/8086; then
       echo 'Connection available.'
       travis_terminate 0
     else

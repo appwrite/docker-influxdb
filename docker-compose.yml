@@ -6,4 +6,4 @@ services:
     build: .
     restart: unless-stopped
     ports:
-    - "8686:8686"
+    - "8086:8086"
