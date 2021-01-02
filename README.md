@@ -1,8 +1,11 @@
 # Docker InfluxDB
 
-[![Build Status](https://travis-ci.com/appwrite/docker-influxdb.svg?branch=main)](https://travis-ci.com/appwrite/docker-influxdb)
-![Docker Pulls](https://img.shields.io/docker/pulls/appwrite/influxdb.svg)
-[![Discord](https://img.shields.io/discord/564160730845151244)](https://discord.gg/GSeTUeA)
+[![Discord](https://img.shields.io/discord/564160730845151244?label=discord&style=flat-square)](https://appwrite.io/discord)
+[![Docker Pulls](https://img.shields.io/docker/pulls/appwrite/influxdb?color=f02e65&style=flat-square)](https://hub.docker.com/r/appwrite/mariadb)
+[![Build Status](https://img.shields.io/travis/com/appwrite/docker-influxdb?style=flat-square)](https://travis-ci.com/appwrite/docker-influxdb)
+[![Twitter Account](https://img.shields.io/twitter/follow/appwrite_io?color=00acee&label=twitter&style=flat-square)](https://twitter.com/appwrite_io)
+[![Follow Appwrite on StackShare](https://img.shields.io/badge/follow%20on-stackshare-blue?style=flat-square)](https://stackshare.io/appwrite)
+
 
 InfluxDB Docker image pre-configured for [Appwrite server](https://appwrite.io) installation. This container is only extending the official InfluxDB docker image with Appwrite specific configuration settings, for a fresh installation of InfluxDB use only [docker official image](https://hub.docker.com/_/influxdb).
 
@@ -47,13 +50,6 @@ docker buildx build --platform linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
 * [GitHub](https://github.com/appwrite)
 * [Discord](https://discord.gg/GSeTUeA)
 * [Twitter](https://twitter.com/appwrite_io)
-
-## Authors
-
-**Eldad Fux**
-
-+ [https://twitter.com/eldadfux](https://twitter.com/eldadfux)
-+ [https://github.com/eldadfux](https://github.com/eldadfux)
 
 ## Copyright and license
 
