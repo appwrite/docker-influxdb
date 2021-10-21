@@ -11,7 +11,7 @@ RUN apk add --no-cache \
     rm -rf /var/cache/apk/* && \
     update-ca-certificates 2>/dev/null
 
-ENV INFLUXDB_VERSION 1.8.3
+ENV INFLUXDB_VERSION 1.8.10
 
 RUN set -ex && \
     mkdir ~/.gnupg; \
