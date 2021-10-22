@@ -33,7 +33,6 @@ script:
   - >
     if : >/dev/tcp/localhost/8086; then
       echo 'Connection available.'
-      travis_terminate 0
     else
       echo 'Connection unavailable.'
       travis_terminate 1
